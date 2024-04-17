@@ -4,37 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GabbyStudios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
-
-
-        footer {
-  background-color: #f9f9f9;
-  color: #666;
-  text-align: center;
-  padding: 20px;
-  position: fixed;  /* Changed from absolute to fixed */
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-        /* Stile per lo spazio */
-.spazio {
-  width: 500px; /* Larghezza dello spazio */
-  height: 20px; /* Altezza dello spazio */
-  background-color: #FFFFFF; /* Colore di sfondo dello spazio */
-  border: none; /* Rimuove il bordo dello spazio */
-  border-radius: 0px; /* Bordi arrotondati */
-  box-shadow: none; /* Rimuove l'ombra dello spazio */
-  margin: 0 auto; /* Margine per centrare lo spazio */
-  padding: 0px; /* Spazio interno */
-  text-align: center; /* Allineamento del testo al centro */
-  font-family: Arial, sans-serif; /* Tipo di carattere */
-}
-
-
-        
-
         /* Reset CSS */
         * {
             margin: 0;
@@ -70,7 +41,7 @@
             z-index: 1000;
             background-color: #fff;
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-            padding: 10px 20px;
+            padding: 10px 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -89,7 +60,7 @@
 
         /* Main Content Styles */
         main {
-            padding: 20px;
+            padding: 20px 5%;
             text-align: center;
         }
 
@@ -97,93 +68,82 @@
             margin-bottom: 50px;
         }
 
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
         .feature {
+            width: calc(33.333% - 20px);
+            margin-bottom: 20px;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 10px;
             background-color: #5CE1E6;
-            margin-bottom: 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-footer {
-    background-color: #f9f9f9;
-    color: #666;
-    text-align: center;
-    padding: 20px;
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; /* Assicura che il footer rimanga sopra gli altri contenuti */
-}
+        footer {
+            background-color: #f9f9f9;
+            color: #666;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
 
-        .miur-bar {
-            background-color: #6e6ef0;
-            color: #fff;
+        .color {
+            color: #5CE1E6;
+            border: 2px #5CE1E6;
+            border-radius: 10px;
             padding: 10px;
-            font-size: 14px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
-        .miur-bar a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 20px;
+        /* Media query per dispositivi di dimensioni inferiori a 768px (tablet) */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 2%;
+            }
+            main {
+                padding: 20px 2%;
+            }
+            .feature {
+                width: calc(50% - 20px);
+            }
         }
 
-        .miur-bar a:hover {
-            text-decoration: underline;
+        /* Media query per dispositivi di dimensioni inferiori a 480px (telefono) */
+        @media (max-width: 480px) {
+            .feature {
+                width: 100%;
+            }
         }
-
-.color {
-    color: #5CE1E6; /* Colore del testo */
-    border: 2px #5CE1E6; /* Bordo solido blu */
-    border-radius: 10px; /* Angoli arrotondati */
-    padding: 10px; /* Spazio interno tra il testo e il bordo */
-}
-
-
-        
     </style>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="logo.png" alt="Logo" width="50" height="50">
-        </div>
-        <div>
-            <a href="https://gabbystudios.github.io/Pagina-Globale/" target="_blank">Pagina Globale</a>
-        </div>
-    </header>
+<header>
+    <div>
+        <img src="logo.png" alt="Logo" width="50" height="50">
+    </div>
+    <div>
+        <a href="https://gabbystudios.github.io/Pagina-Globale/" target="_blank">Pagina Globale</a>
+    </div>
+</header>
 
-    <main>
-
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-        
-        
-        <div class="spazio-vuoto">
+<main>
+    <div class="spazio-vuoto">
         <section class="hero">
-
-              <div class="spazio">
-              </div>
-        <section class="color">
-
-            <div class="animate__animated animate__fadeInUp">
-                                        <h2>Welcome in Gabby Studios</h2>
-            <p>Find the service you need</p>
-            
-            </div>
-            </div>
-
-
-            
+            <div class="spazio"></div>
+            <section class="color">
+                <div class="animate__animated animate__fadeInUp">
+                    <h2>Welcome in Gabby Studios</h2>
+                    <p>Find the service you need</p>
+                </div>
+            </section>
         </section>
 
         <section class="features">
@@ -201,17 +161,15 @@ footer {
                 <h3>Gabriel Jones Official Site</h3>
                 <p>Hey, ciao, vai sul mio sito per conoscermi!!</p>
                 <a href="https://gabrieljones.altervista.org/" target="_blank">Vai a Gabriel Jones</a>
-
-
             </div>
         </section>
-                          <div class="spazio"></div>
-    </main>
-              <div class="spazio">
-              </div>
-    <footer>
-        <p>&copy; 2024 Gabriel Jones Dev <a href="https://gjdev.it/" target="_blank">Vai a Gabriel Jones</a>
-. All rights reserved.</p>
-    </footer>
+        <div class="spazio"></div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Gabriel Jones Dev <a href="https://gjdev.it/" target="_blank">Vai a Gabriel Jones</a>. All rights reserved.</p>
+</footer>
 </body>
 </html>
+
